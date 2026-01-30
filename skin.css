@@ -1,0 +1,255 @@
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5e1e1; 
+}
+
+
+.encabezado {
+    text-align: center;
+    padding: 20px;
+}
+
+.encabezado h1 {
+    font-family: 'Arial Black', Gadget, sans-serif;
+    font-size: 50px; 
+    color: #8B4513;  
+    margin: 10px 0;
+}
+
+
+.navegacion {
+    background-color: #d1b008; 
+    padding: 10px 20px;
+}
+
+.lista-nav {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end; 
+    gap: 20px; 
+}
+
+.navegacion a {
+    text-decoration: none;
+    color: #fff; 
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.navegacion a:hover {
+    color: #136f8b; 
+}
+
+
+.contenedor-principal {
+    max-width: 800px; 
+    margin: 0 auto;   
+    padding: 20px;
+}
+
+.seccion-menu {
+    margin-bottom: 40px;
+    text-align: center;
+    
+}
+
+.seccion-menu h2 {
+    font-family: 'Arial Black', Gadget, sans-serif;
+    font-size: 35px;
+    color: #131211;
+    margin: 20px 0;
+    text-transform: uppercase;
+    border-bottom: 2px solid #d1b008; 
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+
+.imagen-menu {
+    width: 100%;
+    max-width: 600px; 
+    height: auto;
+    border-radius: 8px; 
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); 
+}
+
+
+.lista-items {
+    list-style: none;
+    text-align: left; 
+    max-width: 600px;
+    margin: 0 auto; 
+    font-size: 18px;
+}
+
+.lista-items li {
+    display: flex; 
+    justify-content: space-between; 
+    padding: 10px 0;
+    border-bottom: 1px dotted #ccc; 
+}
+
+.lista-items li:last-child {
+    border-bottom: none;
+}
+
+.nombre {
+    font-weight: bold;
+    text-transform: capitalize; 
+    color: #333;
+}
+
+.precio {
+    font-weight: bold;
+    color: #8B4513;
+}
+
+/* --- PIE DE PÁGINA --- */
+.pie-pagina {
+    text-align: center;
+    padding: 20px;
+    background-color: #f4f4f4;
+    font-size: 16px;
+    color: #131212;
+    margin-top: 40px;
+}
+
+.pie-pagina hr {
+    margin-bottom: 15px;
+    border: 0;
+    border-top: 1px solid #ccc;
+}
+
+
+.lista-items li {
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    padding: 15px 0; 
+    border-bottom: 1px dotted #ccc; 
+}
+
+
+.info-producto {
+    display: flex;
+    flex-direction: column; 
+    text-align: left;
+    max-width: 80%; 
+}
+
+.nombre {
+    font-weight: bold;
+    text-transform: capitalize; 
+    color: #333;
+    font-size: 18px; 
+}
+
+
+.descripcion {
+    font-size: 14px; 
+    color: #666; 
+    font-style: italic; 
+    margin-top: 4px; 
+}
+
+.precio {
+    font-weight: bold;
+    color: #8B4513;
+    font-size: 20px; 
+    white-space: nowrap; 
+}
+
+
+.lista-items li {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+    padding: 15px 0;
+    border-bottom: 1px dotted #ccc;
+}
+
+
+.item-izq {
+    display: flex;
+    align-items: center; 
+    gap: 15px; 
+    max-width: 80%; 
+}
+
+
+.lista-items li {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+    padding: 15px 0;
+    border-bottom: 1px dotted #ccc;
+}
+
+
+.item-izq {
+    display: flex;
+    align-items: center; /
+    gap: 15px; 
+    max-width: 80%; 
+}
+
+
+.thumb {
+    width: 60px;  
+    height: 60px; 
+    object-fit: cover; 
+    border-radius: 50%; 
+    border: 2px solid #d1b008; 
+    flex-shrink: 0; 
+}
+
+.info-producto {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.nombre {
+    font-weight: bold;
+    text-transform: capitalize;
+    color: #333;
+    font-size: 18px;
+}
+
+.descripcion {
+    font-size: 14px;
+    color: #666;
+    font-style: italic;
+    margin-top: 4px;
+}
+
+.precio {
+    font-weight: bold;
+    color: #8B4513;
+    font-size: 20px;
+    white-space: nowrap;
+}
+
+/* --- RESPONSIVIDAD (CELULARES) --- */
+@media (max-width: 600px) {
+    .encabezado h1 {
+        font-size: 32px; /* Título más pequeño en celular */
+    }
+    
+    .lista-nav {
+        justify-content: center; /* Centrar menú en celular */
+        flex-direction: column; /* Poner uno debajo del otro */
+        align-items: center;
+    }
+
+    .seccion-menu h2 {
+        font-size: 28px;
+    }
+}
